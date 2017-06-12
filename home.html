@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>ChangeMaker</title>
+  <title>ChangeMakers</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
   <style>
-
   .nav2{
   background-color:rgba(111,84,89,0.7);
   }
@@ -19,6 +19,8 @@
   }
   h2{
   text-decoration:underline;}
+  img{
+  min-height:75%;}
   </style>
 </head>
 <body>
@@ -28,43 +30,97 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
       </button>
       <a class="navbar-brand dcolor nohover" href="#"><font style="font-family:ARIAL;">CHANGE MAKERS</font></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-
+      
       <ul class="nav navbar-nav navbar-right">
 	  <li><a href="#" class="dcolor nohover"><span class="glyphicon glyphicon-earphone"></span> <font style="font-family:arial; font-weight:700;letter-spacing:1px;">Contact</font></a></li>
-		<li><a href="#" class="dcolor nohover"><span class="glyphicon glyphicon-log-in"></span> <font style="font-family:arial; font-weight:700;letter-spacing:1px;">Login</font></a></li>
-		<li><a href="#" class="dcolor nohover"><span class="glyphicon glyphicon-user"></span> <font style="font-family:arial; font-weight:700;letter-spacing:1px;">SignUp</font></a></li>
-
-
+		<li><a href="#" class="dcolor nohover" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> <font style="font-family:arial; font-weight:700;letter-spacing:1px;">Login/SignUp</font></a></li>
       </ul>
-    </div>
+	
   </div>
 </nav>
-<img src="tmp.jpg" width="100%" height="100%">
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="login-wrap">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+		<div class="login-form">
+			<div class="sign-in-htm">
+				<div class="group">
+					<label for="user" class="label">Username</label>
+					<input id="user" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<input id="check" type="checkbox" class="check" checked>
+					<label for="check"><span class="icon"></span> Keep me Signed in</label>
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="Sign In">
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<a href="#forgot">Forgot Password?</a>
+				</div>
+			</div>
+			<div class="sign-up-htm">
+				<div class="group">
+					<label for="user" class="label">Username</label>
+					<input id="user" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Repeat Password</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Email Address</label>
+					<input id="pass" type="text" class="input">
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="Sign Up">
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<label for="tab-1">Already Member?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+  </div>
+
+<img src="tmp.jpg" width="100%" >
 <footer>
-<div class="container-fluid" style="background-color:#ECECEA;font-size:25px;color:#2B2B2B;height:200px;">
+<div class="container-fluid" style="background-color:#ECECEA;color:#2B2B2B;">
   <div class="row">
   <div class="col-sm-4 ">
-  <h2><center>Our Mission</center></h2>
-  <p align="center">Our mission is to bring back best practices in the field of organ donation and transplantation to india. or helping or mentoring a transplant program</p>
+  <h2 align="center">Our Mission</h2>
+  <p>Our mission is to bring back best practices in the field of organ donation and transplantation to india.The visiting professionals,depending on thier availability,
+  can contribute in a variety of ways such as delivering a lecture or helping or mentoring a transplant program</p>
   </div>
   <div class="col-sm-4 ">
   <h2 align="center">What we do</h2>
-  <p align="center">Mohan foundation has worked for last twenty years to improve the organ donation rate in india.We work with a number of hospitals
+  <p>Mohan foundation has worked for last twenty years to improve the organ donation rate in india.We work with a number of hospitals
   in india to help with capacity building in the field</p>
   </div>
   <div class="col-sm-4 ">
   <h2 align="center">Our Commitment</h2>
-  <p align="center">Mohan Foundation is a non-profit Organisation that organises various aspects of given thoughts The visiting professionals,depending on thier availability,
-  can contribute.</p>
+  <p>Mohan Foundation is a non-profit Organisation that organises various aspects of given thoughts</p>
   </div>
 </div>
 </footer>
-
 
 </body>
 </html>
