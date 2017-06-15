@@ -1,0 +1,128 @@
+
+<html>
+<head>
+<!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso16.css" /> 
+
+<!-- Inline CSS based on choices in "Settings" tab -->
+
+
+<!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+
+<style>
+.center_div{
+    margin: 0 auto;
+    width:80% /* value of your choice which suits your alignment */
+}
+
+.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: #5c5656}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: #ffffff !important;} .asteriskField{color: red;}
+</style>
+</head>
+<body>
+<div class="container center_div">
+<div class="bootstrap-iso">
+ <div class="container-fluid">
+  <div class="row">
+   <div class="col-md-6 col-sm-6 col-xs-12">
+    <div class="formden_header">
+     <h2>
+      Reistration Form
+     </h2>
+     <p>
+     </p>
+    </div>
+    <form method="post" >
+     <div class="form-group ">
+      <label class="control-label requiredField" for="name">
+       Name
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <input class="form-control" id="name" name="name" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label " for="number">
+       Contact Number
+      </label>
+      <input class="form-control" id="number" name="number" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="email">
+       Email
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <input class="form-control" id="email" name="email" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="select">
+       Event interested
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <select class="select form-control" id="select" name="select">
+       <option value="Lectures">
+        Lectures
+       </option>
+       <option value="On-field work">
+        On-field work
+       </option>
+       <option value="Medical work">
+        Medical work
+       </option>
+       <option value="Volenteer">
+        Volenteer
+       </option>
+      </select>
+      <span class="help-block" id="hint_select">
+       Please chose an event type you are interested in.
+      </span>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="date">
+       From Date
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+      <span class="help-block" id="hint_date">
+       Enter a date from which you can participate
+      </span>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="todate">
+       To Date
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <input class="form-control" id="todate" name="todate" placeholder="MM/DD/YYYY" type="text"/>
+      <span class="help-block" id="hint_todate">
+       Enter a date till which you can participate
+      </span>
+     </div>
+     <div class="form-group ">
+      <label class="control-label " for="message">
+       Other query/concern
+      </label>
+      <textarea class="form-control" cols="40" id="message" name="message" placeholder="enter your text here" rows="10"></textarea>
+     </div>
+     <div class="form-group">
+      <div>
+       <button class="btn btn-primary " name="submit" type="submit">
+        Submit
+       </button>
+      </div>
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+</div>
+</div>
+</body>
+</html>
