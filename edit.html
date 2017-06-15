@@ -288,36 +288,82 @@
  
     </div>
     <div class="col-sm-8 text-left"> 
-	 <a href="edit.html"> <button name="edit" class="btn btn-primary">Edit</button></a>
+	  <a href="viewprofile.html"><button name="edit" class="btn btn-primary">view profile</button></a>
 	  <a href="changepassword.html"><button name="password" class="btn btn-primary" style="float:right">Change Password</button></a>
 	  <div>
-	    <table class="table table-hover">
-		   <table class="table table-hover">
-      <tr>
-        <th>AGE</th>
-        <td>25 yrs</td>
-      </tr>
-      <tr>
-        <th>EDUCATION</th>
-        <td>MBBS,FRCS</td>
-      </tr>
-      <tr>
-        <th>SPECIALISATION</th>
-        <td>heart-surgeon</td>
-      </tr>
-     <tr>
-        <th>EXPERIENCE</th>
-        <td>5 yrs</td>
-      </tr>
-	  <tr>
-        <th>CONTACT</th>
-		 <td>9952645399</td>
-      </tr>
-	  <tr>
-        <th>HOSPITAl</th>
-        <td>STAR HOSPITALS</td>
-      </tr>
-  </table>
+	    <form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<!--legend>EDIT</legend-->
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="name">NAME</label>  
+  <div class="col-md-4">
+  <input id="name" name="name" type="text" placeholder="please enter your name" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="age">AGE</label>  
+  <div class="col-md-4">
+  <input id="age" name="age" type="text" placeholder="enter your age" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="contact">CONTACT</label>  
+  <div class="col-md-4">
+  <input id="contact" name="contact" type="text" placeholder="contact" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="specialization">SPECIALIZATION</label>
+  <div class="col-md-4">
+    <select id="specialization" name="specialization" class="form-control">
+      <option value="1">heart-surgion</option>
+      <option value="2">cardio</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="hospital">HOSPITAL</label>  
+  <div class="col-md-4">
+  <input id="hospital" name="hospital" type="text" placeholder="name of hospital " class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="experience">EXPERIENCE</label>  
+  <div class="col-md-4">
+  <input id="experience" name="experience" type="text" placeholder="experience" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <button id="submit" name="submit" class="btn btn-primary">submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
 	  </div>
     </div>
 	
