@@ -1,0 +1,5 @@
+1.Add button in homepage -know more
+2.Add extra footer in homepage
+3.Enchance ui in profile page
+4.change fonts and other
+5.organise css files and other.
